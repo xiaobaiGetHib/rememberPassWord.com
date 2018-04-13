@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiaobai.rpass.rememberpass.act.MainActivity">
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_add_new"
+            android:text="添加"
+            style="@style/Btn_into"
+           />
+        <Button
+            android:layout_marginTop="20dp"
+            android:text="查看"
+            android:id="@+id/btn_into_see"
+            style="@style/Btn_into" />
+    </LinearLayout>
+</RelativeLayout>
