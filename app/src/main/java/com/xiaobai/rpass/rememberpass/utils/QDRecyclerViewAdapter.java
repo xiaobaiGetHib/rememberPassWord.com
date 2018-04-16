@@ -63,9 +63,9 @@ public class QDRecyclerViewAdapter extends RecyclerView.Adapter<QDRecyclerViewAd
         }
 
         public void setText(Remember data) {
-            mEt_use  .setText(data.getUsername().length()>25? data.getUsername().substring(0,22)+"...":data.getUsername());
+            mEt_account .setText(data.getUsername().length()>25? data.getUsername().substring(0,22)+"...":data.getUsername());
             mEt_password.setText("计入时间："+data.getRememberTime());
-            mEt_account  .setText(data.getUseThis().length()>25? data.getUseThis().substring(0,22)+"...":data.getUseThis());
+            mEt_use    .setText(data.getUseThis().length()>25? data.getUseThis().substring(0,22)+"...":data.getUseThis());
         }
     }
 }

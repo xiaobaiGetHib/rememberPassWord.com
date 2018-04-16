@@ -44,7 +44,7 @@ public class AddLogActivity extends BaseActivity {
               String rememberTime= dateFormat.format(System.currentTimeMillis());
                 Remember remember=new Remember(etUse.getText().toString(),etAccount.getText().toString(),etPassword.getText().toString(),
                         TextUtils.isEmpty(etRemake.getText())==true?  null:etRemake.getText().toString(),rememberTime);
-                if(   remember.save()==1){
+                if(remember.save()==1||remember.save()==0){
                     Toast.makeText(AddLogActivity.this, "添加成功", Toast.LENGTH_SHORT).show();
                     finish();
                 }else {

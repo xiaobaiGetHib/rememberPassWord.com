@@ -34,7 +34,7 @@ public class Remember extends Model {
     public Remember(){
         super();
     }
-    public Remember(String username, String password,String useThis,String remake,String rememberTime) {
+    public Remember(String useThis,String username, String password,String remake,String rememberTime) {
         this.username = username;
         this.password = password;
         this.remake=remake;
