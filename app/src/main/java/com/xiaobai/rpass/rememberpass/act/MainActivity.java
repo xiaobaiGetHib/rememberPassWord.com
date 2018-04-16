@@ -20,7 +20,8 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
         setBankVisibity(false);
         setOkVisibity(false);
-      init();
+        setTitleText("记记");
+        init();
     }
 
     private void init() {
@@ -35,7 +36,7 @@ public class MainActivity extends BaseActivity {
         btn_see_info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(getBaseContext(),ViewLogActivity.class));
             }
         });
     }

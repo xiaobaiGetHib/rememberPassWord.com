@@ -29,7 +29,7 @@
         <!-- //数据库表 -->
         <meta-data
             android:name="AA_MODELS"
-            android:value="com.xiaobai.rpass.rememberpass.Remember" />
+            android:value="com.xiaobai.rpass.rememberpass.model.Remember" />
 
         <activity android:name=".act.ViewLogActivity" />
         <activity android:name=".act.AddLogActivity"></activity>
