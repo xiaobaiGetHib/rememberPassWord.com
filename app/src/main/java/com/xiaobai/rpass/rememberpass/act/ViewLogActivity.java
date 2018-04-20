@@ -126,9 +126,12 @@ public class ViewLogActivity  extends BaseActivity {
  @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMoonEvent(MessageEvent messageEvent){
         if(messageEvent!=null) {
-            Toast.makeText(this, "ada", Toast.LENGTH_SHORT).show();
             Intent intent=   new Intent(getBaseContext(),DateActivity.class);
-            intent.putExtra("rememberId",""+messageEvent.getMessage());
+            Remember remember=messageEvent.getMessage();
+            intent.putExtra("rememberThis",""+remember.getUseThis());
+            intent.putExtra("rememberPassword",""+remember.getPassword());
+            intent.putExtra("rememberRemake",""+remember.getRemake());
+            intent.putExtra("rememberUserName",""+remember.getUsername());
             startActivity(intent);
         }
     }

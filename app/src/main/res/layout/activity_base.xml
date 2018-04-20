@@ -18,7 +18,7 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="11dp"
+                android:layout_marginLeft="6dp"
                 android:src="@drawable/base_title_arrow_back" />
             <TextView
                 android:id="@+id/tv_basetitle_back"
@@ -40,7 +40,7 @@
                 android:gravity="center"
                 android:text="标题"
                 android:textColor="#ffffff"
-                android:textSize="16sp" />
+                android:textSize="18sp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"

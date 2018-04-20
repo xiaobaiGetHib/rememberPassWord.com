@@ -6,11 +6,13 @@ import com.activeandroid.Model;
 import com.activeandroid.annotation.Column;
 import com.activeandroid.annotation.Table;
 
+import java.io.Serializable;
+
 /**
  * Created by Administrator on 2018/4/13.
  */
-@Table(name = "Remember ")
-public class Remember extends Model {
+@Table(name = "Remember ",id = "ID")
+public class Remember extends Model implements Serializable {
 
 
 

@@ -6,40 +6,45 @@
     app:leftSwipe="true"
     app:swipeEnable="true"
     android:layout_height="70dp">
-<LinearLayout
-    android:id="@+id/ll_item"
-    android:orientation="vertical"
+<RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="50dp"
-        android:textSize="16dp"
-        android:text="用途"
-        android:id="@+id/tv_use"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:visibility="gone"
-        android:text="用途"
-        android:textSize="14dp"
-        android:layout_marginTop="3dp"
-        android:id="@+id/tv_account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_marginLeft="50dp"
-        android:text="用途"
-        android:textSize="14dp"
-        android:layout_marginTop="3dp"
-        android:id="@+id/tv_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <View
-        android:background="@color/color_27"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="0.8dp"/>
-</LinearLayout>
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:textSize="16dp"
+            android:text="用途"
+            android:id="@+id/tv_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:text="用途"
+            android:textSize="14dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:text="用途"
+            android:textSize="14dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_alignBottom="@id/ll_item"
+        android:background="@color/color_24"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</RelativeLayout>
   <LinearLayout
       android:orientation="horizontal"
       android:layout_width="wrap_content"

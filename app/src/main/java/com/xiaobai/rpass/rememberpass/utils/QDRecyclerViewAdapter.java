@@ -103,7 +103,7 @@ public class QDRecyclerViewAdapter extends RecyclerView.Adapter<QDRecyclerViewAd
                 @Override
                 public void onClick(View v) {
                     Log.i("进入", "onClick: ");
-                    EventBus.getDefault().post(new MessageEvent(data.getId()+""));
+                    EventBus.getDefault().post(new MessageEvent(data));
                 }
             });
         }

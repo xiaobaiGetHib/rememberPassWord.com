@@ -1,21 +1,23 @@
 package com.xiaobai.rpass.rememberpass.utils;
 
+import com.xiaobai.rpass.rememberpass.model.Remember;
+
 /**
  * Created by Administrator on 2018/4/18.
  */
 
 public class MessageEvent {
-    private String message;
+    private Remember message;
 
-    public MessageEvent(String message) {
+    public MessageEvent(Remember message) {
         this.message = message;
     }
 
-    public String getMessage() {
+    public Remember getMessage() {
         return message;
     }
 
-    public void setMessage(String message) {
+    public void setMessage(Remember message) {
         this.message = message;
     }
 }

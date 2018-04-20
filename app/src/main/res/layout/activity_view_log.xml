@@ -18,8 +18,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/color_24"/>
     <android.support.v7.widget.RecyclerView
-        android:layout_marginTop="16dp"
         android:id="@+id/rv_list_log"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
