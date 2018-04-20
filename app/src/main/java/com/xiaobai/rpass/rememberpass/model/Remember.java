@@ -11,6 +11,9 @@ import com.activeandroid.annotation.Table;
  */
 @Table(name = "Remember ")
 public class Remember extends Model {
+
+
+
     @Column
     private String useThis;
     @Column
@@ -73,5 +76,10 @@ public class Remember extends Model {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+    public static boolean deleteById(Long id){
+
+       Remember.delete(Remember.class,id);
+        return  true;
     }
 }

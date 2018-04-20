@@ -25,8 +25,8 @@ public class MainActivity extends BaseActivity {
     }
 
     private void init() {
-        btn_add = this.findViewById(R.id.btn_add_new);
-        btn_see_info = this.findViewById(R.id.btn_into_see);
+        btn_add = (Button)this.findViewById(R.id.btn_add_new);
+        btn_see_info =(Button) this.findViewById(R.id.btn_into_see);
         btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

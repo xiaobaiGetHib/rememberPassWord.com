@@ -126,4 +126,6 @@ public class BaseActivity extends AppCompatActivity {
     public TextView getTvBasetitleOK() {
         return tvBasetitleOK;
     }
+
+
 }

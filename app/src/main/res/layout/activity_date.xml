@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiaobai.rpass.rememberpass.act.DateActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            style="@style/Ll_style"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            >
+            <TextView
+                android:layout_gravity="center"
+                android:text="用途："
+                style="@style/Tv_style" />
+            <TextView
+                android:id="@+id/et_use_see"
+                style="@style/Et_style" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/Ll_style"
+            android:orientation="horizontal"
+            android:layout_width="match_parent">
+            <TextView
+
+                android:layout_gravity="center"
+                android:text="账号："
+                style="@style/Tv_style" />
+            <TextView
+                android:id="@+id/et_account_see"
+                style="@style/Et_style" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/Ll_style"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            >
+            <TextView
+                android:layout_gravity="center"
+                android:text="密码："
+                style="@style/Tv_style" />
+            <TextView
+                android:id="@+id/et_password_see"
+                style="@style/Et_style" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/Ll_style"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="备注："
+                style="@style/Tv_style" />
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/shape_et_style"
+                android:layout_height="90dp"
+                android:layout_width="265dp">
+                <TextView
+                    android:id="@+id/et_remake_see"
+                    android:background="@null"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:minHeight="30dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
