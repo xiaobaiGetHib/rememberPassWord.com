@@ -132,6 +132,7 @@ public class ViewLogActivity  extends BaseActivity {
             intent.putExtra("rememberPassword",""+remember.getPassword());
             intent.putExtra("rememberRemake",""+remember.getRemake());
             intent.putExtra("rememberUserName",""+remember.getUsername());
+            intent.putExtra("rememberTime",""+remember.getRememberTime());
             startActivity(intent);
         }
     }

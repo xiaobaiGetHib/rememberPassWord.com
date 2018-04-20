@@ -7,11 +7,11 @@
     <application
         android:name=".MyApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/remeber_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".act.MainActivity">
+        <activity android:name=".act.MainActivity" android:theme="@style/AppThemeNoBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,7 +33,9 @@
 
         <activity android:name=".act.ViewLogActivity" />
         <activity android:name=".act.AddLogActivity" />
-        <activity android:name=".act.DateActivity"></activity>
+        <activity android:name=".act.DateActivity" />
+        <activity android:name=".act.RememberTimeActivity" />
+        <activity android:name=".act.HomeActivity"></activity>
     </application>
 
 </manifest>

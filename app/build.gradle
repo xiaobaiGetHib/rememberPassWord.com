@@ -37,5 +37,6 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:23.4.0'
     compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
     compile 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.ycuwq.widgets:datepicker:1.0.1'
     testCompile 'junit:junit:4.12'
 }

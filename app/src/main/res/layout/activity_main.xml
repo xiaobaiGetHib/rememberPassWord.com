@@ -4,6 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bankgrand"
     tools:context="com.xiaobai.rpass.rememberpass.act.MainActivity">
 
     <LinearLayout
@@ -19,9 +20,16 @@
             style="@style/Btn_into"
            />
         <Button
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:text="时间记入"
+            android:id="@+id/btn_into_add_time"
+            style="@style/Btn_into" />
+        <Button
             android:layout_marginTop="20dp"
             android:text="查看"
             android:id="@+id/btn_into_see"
             style="@style/Btn_into" />
+
     </LinearLayout>
 </RelativeLayout>

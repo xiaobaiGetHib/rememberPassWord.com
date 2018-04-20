@@ -44,25 +44,41 @@
             android:layout_width="match_parent"
             >
             <TextView
-
+                android:layout_gravity="center"
                 android:text="密码："
                 style="@style/Tv_style" />
             <TextView
-                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
                 android:id="@+id/et_password_see"
                 style="@style/tv_style" />
         </LinearLayout>
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        style="@style/Ll_style"
+        android:orientation="horizontal"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_gravity="center"
+            android:text="备注："
+            style="@style/Tv_style" />
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/et_remake_see"
+            style="@style/tv_style"
+            />
+    </LinearLayout>
+        <LinearLayout
+            style="@style/Ll_style"
+            android:orientation="horizontal"
+            android:layout_width="match_parent">
             <TextView
-                android:text="备注："
+                android:layout_gravity="center"
+                android:text="计入时间："
                 style="@style/Tv_style" />
-                <TextView
-                    android:layout_gravity="center_vertical"
-                    android:id="@+id/et_remake_see"
-                    style="@style/tv_style"
-                    />
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/et_time_see"
+                style="@style/tv_style"
+                />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

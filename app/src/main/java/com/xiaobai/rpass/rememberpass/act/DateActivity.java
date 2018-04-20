@@ -14,7 +14,7 @@ import com.xiaobai.rpass.rememberpass.model.Remember;
 public class DateActivity extends BaseActivity {
 
 
-    private TextView et_account_see,et_password_see,et_remake_see,et_use_see;
+    private TextView et_account_see,et_password_see,et_remake_see,et_time_see;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class DateActivity extends BaseActivity {
         String rememberUserName =  getIntent().getStringExtra("rememberUserName");
         String rememberRemake =  getIntent().getStringExtra("rememberRemake");
         String rememberPassword =  getIntent().getStringExtra("rememberPassword");
-
+        String rememberTime=getIntent().getStringExtra("rememberTime");
       /*  Log.i("进入", "onCreate: "+num);*/
 
         getLlBasetitleBack().setOnClickListener(new View.OnClickListener() {
@@ -43,8 +43,15 @@ public class DateActivity extends BaseActivity {
         et_account_see = (TextView) this.findViewById(R.id.et_account_see);
         et_password_see= (TextView) this.findViewById(R.id.et_password_see);
         et_remake_see= (TextView) this.findViewById(R.id.et_remake_see);
+        et_time_see=(TextView)this.findViewById(R.id.et_time_see);
         et_account_see.setText(rememberUserName);
-        et_remake_see.setText(TextUtils.isEmpty(rememberRemake)? "无":rememberRemake);
+        et_time_see.setText(rememberTime);
+        if(TextUtils.isEmpty(rememberRemake)||null==rememberRemake||rememberRemake.equals("null")){
+            et_remake_see.setText("无");
+        }else {
+            et_remake_see.setText(rememberRemake);
+        }
+
         et_password_see.setText(rememberPassword);
     }
 }
